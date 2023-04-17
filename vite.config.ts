@@ -13,23 +13,3 @@ export default defineConfig({
 		setupFiles: './src/tests/setupTests.ts'
 	}
 });
-
-/**
- import { defineConfig, mergeConfig } from 'vitest/config';
-import viteConfig from './vite.config';
-
-export default mergeConfig(
-	viteConfig,
-	defineConfig({
-		test: {
-			name: 'ui-unit-tests',
-			root: './src', // TODO: set to the desired components tree
-			exclude: ['packages/template/*'],
-			globals: true,
-			setupFiles: './src/tests/setupFiles.js',
-			environment: 'jsdom'
-		}
-	})
-);
-
- */
