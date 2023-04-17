@@ -8,7 +8,7 @@
 		"build": "tsc && vite build",
 		"preview": "vite preview",
 		"huskyPrepare": "husky install",
-		"test": "tsc", 
+		"test": "vitest",
 		"lint": "eslint ./src --ext .jsx,.ts,.tsx",
 		"type-check": "tsc",
 		"prettify": "prettier --write src/**/*.{ts,tsx,css}"
@@ -18,6 +18,8 @@
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
+		"@testing-library/jest-dom": "^5.16.5",
+		"@testing-library/react": "^14.0.0",
 		"@types/react": "^18.0.28",
 		"@types/react-dom": "^18.0.11",
 		"@typescript-eslint/eslint-plugin": "^5.58.0",
@@ -28,7 +30,9 @@
 		"eslint-config-xo-typescript": "^0.57.0",
 		"eslint-plugin-react": "^7.32.2",
 		"husky": "^8.0.3",
+		"jsdom": "^21.1.1",
 		"typescript": "^5.0.4",
-		"vite": "^4.2.0"
+		"vite": "^4.2.0",
+		"vitest": "^0.30.1"
 	}
 }
