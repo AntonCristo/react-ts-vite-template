@@ -9,11 +9,14 @@
 			"extends": ["xo-typescript"],
 			"files": ["*.ts", "*.tsx"],
 			"rules": {
+				"@typescript-eslint/no-explicit-any": "error",
+				"@typescript-eslint/no-unsafe-assignment": "off",
 				"@typescript-eslint/triple-slash-reference": "off",
 				"object-curly-spacing": "off",
 				"@typescript-eslint/object-curly-spacing": "off",
 				"comma-dangle": "off",
-				"@typescript-eslint/comma-dangle": "off"
+				"@typescript-eslint/comma-dangle": "off",
+				"@typescript-eslint/no-unsafe-call": "off"
 			}
 		}
 	],
