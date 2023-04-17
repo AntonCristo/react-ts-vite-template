@@ -7,8 +7,9 @@
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
-		"huskyPrepare": "husky install",
+		"husky-prepare": "husky install",
 		"test": "vitest",
+		"pre-push-test": "vitest --run",
 		"lint": "eslint ./src --ext .jsx,.ts,.tsx",
 		"type-check": "tsc",
 		"prettify": "prettier --write src/**/*.{ts,tsx,css}"
